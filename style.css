@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+/*mainBox*/
+#calculator{
+	 width: 35%;
+    height: 95%;
+    min-width: 300px;
+    min-height: 400px;
+	background-color: black;
+	margin:auto;
+	padding: 1px;
+	border: 20px solid white;
+	box-sizing: border-box;
+	}
+#calculator h1{
+	color:white;
+	text-align: center;
+	width: 99.7%;
+	margin:auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+/*screen*/
+#display-screen{
+	overflow: scroll;
+	background-color: #ffffff;
+	border:1px solid white;
+	 height: 20%;
+    min-height: 80px;
+	width: 100%;
+	margin:0px;
+    justify-content: flex-end;
+
+	display: flex;
+	align-items: flex-end;
+}
+/*screen fonts*/
+#display-screen p{
+	font-size:40px;
+	font-weight: bold;
+	 margin: 0.5rem;
+}
+/*button-container*/
+#display-buttons{
+	width: 100%;
+    height: 60%;
+    min-height: 60px;
+	margin-top: 0%;
+	margin-bottom: 0%;
+    border: 1px solid white;
+     display: flex;
+    flex-flow: row wrap;
+}
+
+/*Animations*/
+.red{
+	background-color: red;
+	animation: boom 2.5s ease-in-out infinite;
+}
+
+@keyframes boom{
+	0%{
+		background-color:#f51212;
+	}
+	20%{
+		background-color:#0fbb8cb5;
+
+	}
+	40%{
+		background-color:#f51212;
+
+	}
+	60%{
+		background-color:#b5cadcbd;
+	}
+	80%{
+		background-color: #f51212;
+	}
+	100%{
+		background-color:#e63049db;
+	}
+}
+.ac-color{
+	background-color: #f51212;
+}
+/*buttons*/
+.button{
+	 width: 25%;
+    height: 20%;
+	border:0.1px solid white;
+	justify-content: center;
+	 min-height: 60px;
+	display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition-duration: 1s;
+
+
+}
+.button span{
+	color:white;
+	font-weight: bold;
+}
+.button span:hover{
+    
+    color:red;
+    transition: 1s;
+}
+.button:hover{
+	background-color: whitesmoke;
+	transition: 1s;
+	font-size: 2.5rem;
+}
+#zero-button{
+	width: 50%;
+}
